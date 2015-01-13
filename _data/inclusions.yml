@@ -1,0 +1,27 @@
+content: |
+    ## l'inclusion de fichiers
+
+    [PHP: include - Manual](http://php.net/manual/fr/function.include.php)
+    [PHP: require - Manual](http://php.net/manual/fr/function.require.php)
+    [PHP: include_once - Manual](http://php.net/manual/fr/function.include-once.php)
+    [PHP: require_once - Manual](http://php.net/manual/fr/function.require-once.php)
+
+    - `include`
+    - `require`
+    - `include_once`
+    - `require_once`
+
+    {% include php-code.html source="code/include-warning.php" %}
+
+    {% include php-code.html source="code/require-fatal-error.php" %}
+
+    {% include php-code.html source="code/user-input.php" %}
+
+    {% include php-code.html source="code/include_multi.php" %}
+
+    {% include php-code.html source="code/include_multi_fatal_error.php" %}
+
+    {% include php-code.html source="code/include_once.php" %}
+
+    {% include php-code.html source="code/require_once.php" %}
+

@@ -1,0 +1,19 @@
+content: |
+    ## les fonctions définies par l'utilisateur
+
+    {% include php-code.html source="code/fonction1.php" %}
+
+    {% include php-code.html source="code/fonction2.php" %}
+
+    {% include php-code.html source="code/fonction3.php" %}
+
+    {% include php-code.html source="code/fonction4.php" %}
+
+    {% include php-code.html source="code/fonction5.php" %}
+
+    {% include php-code.html source="code/fonction6.php" %}
+
+    {% include php-code.html source="code/fonction7.php" %}
+
+    {% include php-code.html source="code/fonction8.php" %}
+

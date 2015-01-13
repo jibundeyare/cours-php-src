@@ -1,0 +1,9 @@
+content: |
+    ## les fonctions anonymes
+
+    {% include php-code.html source="code/fonction-anonyme1.php" %}
+
+    {% include php-code.html source="code/fonction-anonyme2.php" %}
+
+    {% include php-code.html source="code/fonction-anonyme3.php" %}
+

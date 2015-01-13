@@ -1,0 +1,29 @@
+content: |
+    ## les variables prédéfinies (`$_GET`, `$_POST`, ...)
+
+    [PHP: Variables prédéfinies - Manual](http://php.net/manual/fr/reserved.variables.php)
+
+    - `$argc`
+    - `$argv`
+    - `$_COOKIE`
+    - `$_ENV`
+    - `$_FILES`
+    - `$_GET`
+    - `$_POST`
+    - `$_SERVER`
+    - `$_SESSION`
+
+    {% include php-code.html source="code/get1.php" %}
+
+    {% include php-code.html source="code/get2.php" %}
+
+    {% include php-code.html source="code/post1.php" %}
+
+    {% include php-code.html source="code/post2.php" %}
+
+    {% include php-code.html source="code/server1.php" %}
+
+    {% include php-code.html source="code/session1-get.php" %}
+
+    {% include php-code.html source="code/session1-set.php" %}
+

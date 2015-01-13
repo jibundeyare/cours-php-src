@@ -1,0 +1,14 @@
+content: |
+    ## la syntaxe
+
+    [PHP: Balises PHP - Manual](http://php.net/manual/fr/language.basic-syntax.phptags.php)
+    [PHP: Séparation des instructions - Manual](http://php.net/manual/fr/language.basic-syntax.instruction-separation.php)
+    [PHP: Introduction - Manual](http://php.net/manual/fr/control-structures.intro.php)
+
+    __En résumé__ :
+    - le code php s'écrit entre une balise ouvrante `<?php` et une balise fermante `?>`. S'il n'y a que du code php dans le fichier, la balise fermante n'est pas obligatoire.
+    - les instructions se terminent toutes par un signe `;` (point-virgule).
+    - les signes `{` (accolade ouvrante) et `}` (accolade fermante) permettent de regrouper plusieurs instructions.
+
+    {% include php-code.html source="code/syntaxe1.php" %}
+

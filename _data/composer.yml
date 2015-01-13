@@ -1,0 +1,34 @@
+content: |
+    ## composer : un gestionnaire de paquets php
+
+    [Composer](https://getcomposer.org/)
+
+    ### à quoi ça sert ?
+
+    - gérer les dépendances
+
+    exemple :
+
+    - [Silex/composer.json at master · silexphp/Silex](https://github.com/silexphp/Silex/blob/master/composer.json)
+    - [HttpKernel/composer.json at master · symfony/HttpKernel](https://github.com/symfony/HttpKernel/blob/master/composer.json)
+
+    - gérer l'autoloading
+
+    ### utilisation de composer
+
+    ```bash
+    composer.phar init
+    composer.phar require symfony/yaml
+    composer.phar require symfony/console
+    ```
+
+    - [symfony/Yaml](https://github.com/symfony/Yaml/)
+    - [symfony/Console](https://github.com/symfony/console/)
+
+    ### aller plus loin avec la console
+
+    - [The Console Component (The Symfony Components)](http://symfony.com/doc/current/components/console/introduction.html)
+    - [Command line PHP using Symfony Console](http://www.sitepoint.com/command-line-php-using-symfony-console/)
+    - [Write a console application using Symfony and Pimple](http://loige.com/write-a-console-application-using-symfony-and-pimple/)
+    - [Using Symfony Console with Silex](http://bradb.net/using-symfony-console-with-silex/)
+

@@ -1,0 +1,22 @@
+{
+  "name": "cnam-cours",
+  "version": "1.0.0",
+  "authors": [
+    "Daishi Kaszer <daishi.kaszer@yahoo.fr>"
+  ],
+  "description": "Supports de cours de php",
+  "main": "index.html",
+  "license": "GPL-3.0+",
+  "homepage": "http://www.jibundeyare.com/",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "foundation": "~5.5.0"
+  }
+}

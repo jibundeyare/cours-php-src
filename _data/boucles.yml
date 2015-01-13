@@ -1,0 +1,44 @@
+content: |
+    ## les boucles
+
+    [PHP: while - Manual](http://php.net/manual/fr/control-structures.while.php)
+    [PHP: do-while - Manual](http://php.net/manual/fr/control-structures.do.while.php)
+    [PHP: for - Manual](http://php.net/manual/fr/control-structures.for.php)
+    [PHP: foreach - Manual](http://php.net/manual/fr/control-structures.foreach.php)
+    [PHP: Les structures de contrôle - Manual](http://php.net/manual/fr/language.control-structures.php)
+
+    __Note__ : le but premier des boucles est de pouvoir répéter des instructions. Elles permettent aussi de parcourir un tableau et de répéter des instructions sur chacun des éléments.
+
+    - `while`
+    - `do while`
+    - `for`
+    - `foreach`
+
+    {% include php-code.html source="code/while1.php" %}
+
+    {% include php-code.html source="code/while2.php" %}
+
+    {% include php-code.html source="code/while3.php" %}
+
+    {% include php-code.html source="code/while4.php" %}
+
+    {% include php-code.html source="code/do_while1.php" %}
+
+    {% include php-code.html source="code/do_while2.php" %}
+
+    {% include php-code.html source="code/do_while3.php" %}
+
+    {% include php-code.html source="code/for1.php" %}
+
+    {% include php-code.html source="code/for2.php" %}
+
+    {% include php-code.html source="code/for3.php" %}
+
+    {% include php-code.html source="code/foreach1.php" %}
+
+    {% include php-code.html source="code/foreach2.php" %}
+
+    {% include php-code.html source="code/foreach3.php" %}
+
+    {% include php-code.html source="code/foreach4.php" %}
+

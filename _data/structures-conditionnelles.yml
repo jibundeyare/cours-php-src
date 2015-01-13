@@ -1,0 +1,34 @@
+content: |
+    ## les structure de contrôle conditionnelles (`if`, `switch`, ...)
+
+    [PHP: if - Manual](http://php.net/manual/fr/control-structures.if.php)
+    [PHP: else - Manual](http://php.net/manual/fr/control-structures.else.php)
+    [PHP: elseif/else if - Manual](http://php.net/manual/fr/control-structures.elseif.php)
+    [PHP: switch - Manual](http://php.net/manual/fr/control-structures.switch.php)
+    [PHP: Syntaxe alternative - Manual](http://php.net/manual/fr/control-structures.alternative-syntax.php)
+
+    > L'instruction if est une des plus importantes instructions de tous les langages, PHP inclus. Elle permet l'exécution conditionnelle d'une partie de code.
+
+    > L'instruction switch équivaut à une série d'instructions if. En de nombreuses occasions, vous aurez besoin de comparer la même variable (ou expression) avec un grand nombre de valeurs différentes, et d'exécuter différentes parties de code suivant la valeur à laquelle elle est égale. C'est exactement à cela que sert l'instruction switch.
+
+    - `if`
+    - `else if` / `elseif`
+    - `else`
+    - `switch`
+
+    {% include php-code.html source="code/if1.php" %}
+
+    {% include php-code.html source="code/if2.php" %}
+
+    {% include php-code.html source="code/if3.php" %}
+
+    {% include php-code.html source="code/if4.php" %}
+
+    {% include php-code.html source="code/switch1.php" %}
+
+    {% include php-code.html source="code/switch2.php" %}
+
+    {% include php-code.html source="code/switch3.php" %}
+
+    {% include php-code.html source="code/switch4.php" %}
+

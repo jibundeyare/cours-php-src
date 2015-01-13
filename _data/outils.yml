@@ -1,0 +1,47 @@
+content: |
+    ## quelques outils du développeur
+
+    ### un gestionnaire de versions
+
+    [Git](http://www.git-scm.com/)
+
+    __Max OS X__
+
+    Télécharger depuis [Git - Downloading Package](http://www.git-scm.com/download/mac)
+
+    __Windows__
+
+    Télécharger depuis [Git - Downloading Package](http://www.git-scm.com/download/win)
+
+    __Linux__
+
+    Voir [Git](http://www.git-scm.com/download/linux)
+
+    Avec Debian/Ubuntu
+
+    ```bash
+    apt-get install git
+    ```
+
+    ### un gestionnaire de paquets pour mac os x
+
+    [Homebrew — The missing package manager for OS X](http://brew.sh/)
+
+    ```bash
+    ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+    ```
+
+    ### un gestionnaire de paquets pour windows
+
+    [Chocolatey Gallery](https://chocolatey.org/)
+
+    ```bash
+    @powershell -NoProfile -ExecutionPolicy unrestricted -Command "iex ((new-object net.webclient).DownloadString('https://chocolatey.org/install.ps1'))" && SET PATH=%PATH%;%ALLUSERSPROFILE%\chocolatey\bin
+    ```
+
+    ### les outils de développement gnu pour windows
+
+    [Cygwin](http://cygwin.com/)
+
+    Voir [Cygwin Installation](https://cygwin.com/install.html) pour l'installation.
+

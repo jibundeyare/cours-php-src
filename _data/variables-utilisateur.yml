@@ -1,0 +1,75 @@
+content: |
+    ### les variables définies par l'utilisateur
+
+    [PHP: Essentiel - Manual](http://php.net/manual/fr/language.variables.basics.php)
+
+    > En PHP, les variables sont représentées par un signe dollar "$" suivi du nom de la variable. Le nom est sensible à la casse.
+    >
+    > Les noms de variables suivent les mêmes règles de nommage que les autres entités PHP. Un nom de variable valide doit commencer par une lettre ou un souligné (_), suivi de lettres, chiffres ou soulignés. Exprimé sous la forme d'une expression régulière, cela donne : '[a-zA-Z_\x7f-\xff][a-zA-Z0-9_\x7f-\xff]*' 
+
+    __En résumé__ : comme leur nom l'indique, les variables peuvent stocker des valeurs qui changent ou que l'on pourra changer soi-même. Les variables sont toujours précédées du signe `$` (dollar). Ensuite on peut utiliser les lettre de `A` à `Z`, en minuscule ou en majuscule et le signe `_` (sousligné, underscore) puis les chiffres de `0` à `9`.
+
+    #### les types de données
+
+    ##### nombre entier (integer, int)
+
+    {% include php-code.html source="code/integer.php" %}
+
+    ##### nombre à virgule flottante (float, flt)
+
+    {% include php-code.html source="code/float.php" %}
+
+    ##### chaîne de caractères (string, str)
+
+    {% include php-code.html source="code/string1.php" %}
+
+    {% include php-code.html source="code/string2.php" %}
+
+    {% include php-code.html source="code/string3.php" %}
+
+    ##### booléen (boolean, bool)
+
+    {% include php-code.html source="code/boolean.php" %}
+
+    ##### tableau (array)
+
+    {% include php-code.html source="code/array1.php" %}
+
+    {% include php-code.html source="code/array2.php" %}
+
+    ##### objet (object)
+
+    {% include php-code.html source="code/object1.php" %}
+
+    {% include php-code.html source="code/object2.php" %}
+
+    ##### ressource (resource)
+
+    {% include php-code.html source="code/resource.php" %}
+
+    ##### fonction anonyme (fonction lambda, closure, callable)
+
+    {% include php-code.html source="code/fonction-anonyme1.php" %}
+
+    #### transtypage (type casting)
+
+    [PHP: Manipulation de types - Manual](http://php.net/manual/fr/language.types.type-juggling.php)
+
+    {% include php-code.html source="code/transtypage-integer.php" %}
+
+    {% include php-code.html source="code/transtypage-float.php" %}
+
+    ##### fonctions de transtypage
+
+    - `boolval()`
+    - `floatval()`
+    - `intval()`
+    - `number_format()`
+    - `strval()`
+
+    ##### le transtypage booléen
+
+    [PHP: Booleans - Manual](http://php.net/manual/en/language.types.boolean.php#language.types.boolean.casting)
+
+    {% include php-code.html source="code/transtypage-booleen.php" %}
+

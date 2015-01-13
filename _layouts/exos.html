@@ -1,0 +1,15 @@
+{% include header.html %}
+
+{% for source in page.sources %}
+
+    {% capture source_path %}exos/{{ source }}{% endcapture %}
+
+    <a href="{{ source_path }}">{{ source_path }}</a>
+
+    {% highlight php %}
+    {% include_relative {{ source_path }} %}
+    {% endhighlight %}
+
+{% endfor %}
+
+{% include footer.html %}

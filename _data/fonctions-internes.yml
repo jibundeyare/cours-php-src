@@ -1,0 +1,207 @@
+content: |
+    ## les fonctions internes
+
+    [PHP: Function Reference - Manual](http://php.net/manual/en/funcref.php)
+
+    {% include php-code.html source="code/appel-fonction1.php" %}
+
+    {% include php-code.html source="code/appel-fonction2.php" %}
+
+    {% include php-code.html source="code/appel-fonction3.php" %}
+
+    {% include php-code.html source="code/appel-fonction4.php" %}
+
+    ### fonctions liées à l'exécution du code php
+
+    - `die()`
+    - `eval()`
+    - `exit()`
+    - `sleep()`
+    - `usleep()`
+
+    __Attention__ : l'usage de la fonction `eval()` est fortement déconseillé car elle pose de sérieux problèmes de sécurité.
+
+    ### fonctions de débogage (debugging)
+
+    - `print_r()`
+    - `var_dump()`
+    - `var_export()`
+
+    {% include php-code.html source="code/var_dump.php" %}
+
+    ### fonctions liées au navigateur
+
+    - `get_browser()`
+
+    ### fonctions liées au contenu des variables
+
+    - `empty()`
+    - `isset()`
+    - `serialize()`
+    - `unset()`
+    - `unserialize()`
+
+    ### fonctions de transtypage de variables
+
+    - `boolval()`
+    - `floatval()`
+    - `intval()`
+    - `number_format()`
+    - `strval()`
+
+    ### fonctions de vérification du type des variable
+
+    - `gettype()`
+    - `is_array()`
+    - `is_callable()`
+    - `is_float()`
+    - `is_int()`
+    - `is_numeric()`
+    - `is_object()`
+    - `is_string()`
+    - `is_null()`
+
+    ### fonctions mathématiques
+
+    [PHP: Math - Manual](http://php.net/manual/en/book.math.php)
+
+    - `ceil()`
+    - `floor()`
+    - `number_format()`
+    - `round()`
+
+    ### fonctions de manipulation de chaîne de caractères (string)
+
+    [PHP: Fonctions sur les chaînes de caractères - Manual](http://php.net/manual/fr/ref.strings.php)
+
+    affichage :
+
+    - `echo()`
+    - `print()`
+    - `printf()`
+
+    édition :
+
+    - `str_ireplace()`
+    - `str_pad()`
+    - `str_repeat()`
+    - `str_replace()`
+    - `substr_replace()`
+
+    recherche :
+
+    - `strlen()`
+    - `strpos()`
+    - `strrpos()`
+    - `strstr()`
+    - `strtok()`
+    - `substr()`
+    - `substr_count()`
+
+    espaces :
+
+    - `ltrim()`
+    - `rtrim()`
+    - `trim()`
+
+    slash :
+
+    - `addcslashes()`
+    - `addslashes()`
+    - `stripcslashes()`
+    - `stripslashes()`
+
+    comparaison :
+
+    - `strcasecmp()`
+    - `strcmp()`
+
+    casse :
+
+    - `lcfirst()`
+    - `strtolower()`
+    - `strtoupper()`
+    - `ucfirst()`
+    - `ucwords()`
+
+    conversion chaîne de caractères / tableau :
+
+    - `explode()`
+    - `implode()`
+
+    url :
+
+    - `http_build_query()`
+    - `parse_str()`
+    - `parse_url()`
+
+    html :
+
+    - `html_entity_decode()`
+    - `htmlentities()`
+    - `htmlspecialchars()`
+    - `htmlspecialchars_decode()`
+    - `strip_tags()`
+
+    ascii :
+
+    - `chr()`
+    - `ord()`
+
+    csv :
+
+    - `fgetcsv()`
+    - `fputcsv()`
+    - `str_getcsv()`
+
+    ### fonctions de manipulation de tableaux
+
+    [PHP: Fonctions sur les tableaux - Manual](http://php.net/manual/fr/ref.array.php)
+
+    - `array_diff()`
+    - `array_key_exists()`
+    - `array_map()`
+    - `array_merge()`
+    - `array_multisort()`
+    - `compact()`
+    - `count()`
+    - `extract(à`
+    - `in_array()`
+    - `list()`
+    - `sort()`
+
+    ### fonctions de lecture / écriture de fichiers
+
+    - `fclose()`
+    - `feof()`
+    - `fgets()`
+    - `file_get_contents()`
+    - `file_put_contents()`
+    - `fopen()`
+    - `fwrite()`
+
+    ### fonctions de lecture de fichiers ini
+
+    - `parse_ini_file()`
+
+    ### fonctions liées au système de fichiers
+
+    - `copy()`
+    - `file_exists()`
+    - `getcwd()`
+    - `is_file()`
+    - `is_dir()`
+    - `mkdir()`
+    - `rmdir()`
+    - `scandir()`
+    - `unlink()`
+
+    ### fonctions liées aux fonctions
+
+    - `call_user_func()`
+    - `call_user_func_array()`
+    - `create_function()`
+    - `func_get_args()`
+    - `func_num_args()`
+    - `function_exists()`
+

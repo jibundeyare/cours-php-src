@@ -1,0 +1,57 @@
+content: |
+    ## démarrage
+
+    ### particularité du langage
+
+    - dédié au web
+    - interprété
+    - orienté objet
+    - ressemble à [Java](https://fr.wikipedia.org/wiki/Java_\(langage\))
+    - [typage dynamique](https://fr.wikipedia.org/wiki/Typage_dynamique)
+    - [typage faible](https://fr.wikipedia.org/wiki/Type_\(informatique\)#Typage_fort_et_typage_faible)
+    - balise ouvrante `<?php` et fermante `?>`
+
+    ### histoire
+
+    [PHP — Wikipédia](https://fr.wikipedia.org/wiki/PHP)
+
+    ### vérification de l'installation
+
+    Ouvrez une nouvelle console et testez la commande suivante :
+
+    ```bash
+    php --version
+    ```
+
+    Si vous voyez un message semblable à ce qui suit, votre configuration est ordre :
+
+    ```bash
+    PHP 5.6.0 (cli) (built: Sep 13 2014 10:36:37)
+    Copyright (c) 1997-2014 The PHP Group
+    Zend Engine v2.6.0, Copyright (c) 1998-2014 Zend Technologies
+    ```
+
+    Si vous ne voyez pas ce type de message, consultez [amp.html](amp.html) et [cli.html](cli.html)
+
+    ### un premier script php en ligne de commande
+
+    ```bash
+    php -a
+    echo "Hello World!\n";
+    ```
+
+    __Attention__ : sous Windows, pour faire fonctionner cette commande, il faut en plus appuyer sur les touches `CTRL Z` puis `ENTER`.
+
+    ### un premier script php dans un fichier
+
+    {% include php-code.html source="code/hello.php" %}
+
+    pour exécuter le fichier
+
+    ```bash
+    cd [CHEMIN DU DOSSIER]
+    php hello.php
+    ```
+
+    en complément, voir [ligne-de-commande.html](ligne-de-commande.html) pour apprendre à se servir de la ligne de commande
+

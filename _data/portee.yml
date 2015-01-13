@@ -1,0 +1,6 @@
+content: |
+    ## la portée des variables
+
+    - [PHP: Portée des variables - Manual](http://php.net/manual/fr/language.variables.scope.php)
+    - [PHP: $GLOBALS - Manual](http://php.net/manual/fr/reserved.variables.globals.php)
+

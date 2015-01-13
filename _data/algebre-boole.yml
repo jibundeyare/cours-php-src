@@ -1,0 +1,21 @@
+content: |
+    ## l'algèbre de Boole (`&&`, `||`)
+
+    [PHP: Les opérateurs logiques - Manual](http://php.net/manual/fr/language.operators.logical.php)
+
+    En complément voir aussi :
+
+    [Algèbre de Boole (logique) — Wikipédia](https://fr.wikipedia.org/wiki/Alg%C3%A8bre_de_Boole_(logique))
+
+    {% include php-code.html source="code/bool1.php" %}
+
+    {% include php-code.html source="code/bool2.php" %}
+
+    {% include php-code.html source="code/bool3.php" %}
+
+    {% include php-code.html source="code/bool4.php" %}
+
+    {% include php-code.html source="code/bool5.php" %}
+
+    {% include php-code.html source="code/bool6.php" %}
+

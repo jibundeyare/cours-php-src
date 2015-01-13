@@ -1,0 +1,32 @@
+content: |
+    ## les opérateurs
+
+    [PHP: Les opérateurs - Manual](http://php.net/manual/fr/language.operators.php)
+
+    - l'opérateur d'affectation : `=`
+    - les opérateurs arithmétiques : `+` `-` `*` `/` `%` (voir [modulo][1]) `**` (voir [exponentiation][2])
+    - les opérateurs booléens : `&&` `||` `xor` `and` `or` `!` (voir [algèbre de Boole][3])
+    - les opérateurs de comparaison : `==` `!=` `<` `>` `<=` `>=`
+    - les opérateurs d'incrémantation / décrémentation : `++` `--`
+    - l'opérateur de concaténation de chaîne de caractères : `.`
+
+    __Note__ : concaténer = chaîner, mettre bout à bout
+
+    {% include php-code.html source="code/operateurs-affectation.php" %}
+
+    {% include php-code.html source="code/operateurs-concatenation.php" %}
+
+    {% include php-code.html source="code/operateurs-arithmetique.php" %}
+
+    {% include php-code.html source="code/operateurs-incrementation1.php" %}
+
+    {% include php-code.html source="code/operateurs-decrementation1.php" %}
+
+    {% include php-code.html source="code/operateurs-incrementation2.php" %}
+
+    {% include php-code.html source="code/operateurs-decrementation2.php" %}
+
+    [1]: https://fr.wikipedia.org/wiki/Modulo_(op%C2%A9ration)          "Modulo"
+    [2]: https://fr.wikipedia.org/wiki/Exponentiation                   "Exponentiation"
+    [3]: https://fr.wikipedia.org/wiki/Alg%C3%A8bre_de_Boole_(logique)  "Algèbre de Boole (logique) — Wikipédia"
+

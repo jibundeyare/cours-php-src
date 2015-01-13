@@ -1,0 +1,40 @@
+destination: ../cours
+
+exclude: [
+    .sass-cache,
+    bower.json,
+    bower_components,
+    config.rb,
+    Gruntfile.js,
+    node_modules,
+    npm-debug.log,
+    package.json,
+    run-php.sh,
+    sass,
+    test-php.sh
+]
+
+include: [
+]
+
+kramdown:
+    input: GFM
+
+markdown: kramdown
+
+# markdown: redcarpet
+
+# redcarpet:
+#   extensions:
+#     - autolink
+#     - fenced_code_blocks
+#     - hard_wrap
+#     - no_intra_emphasis
+#     - strikethrough
+#     - superscript
+
+timezone: Europe/Paris
+
+# title: "Développement Web (2) : sites dynamiques et développement côté serveur"
+title: "Développement web côté serveur avec PHP"
+

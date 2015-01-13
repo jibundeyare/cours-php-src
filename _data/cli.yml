@@ -1,0 +1,83 @@
+content: |
+    ## php en ligne de commande
+
+    __Note__ : CLI = command line interface, interface en ligne de commande
+
+    ### windows
+
+    #### avec uwamp
+
+    Le dossier php se trouve dans `UwAmp\bin\php\php_[CURRENT_VERSION]` (`[CURRENT_VERSION]` dépend de la version php). Et le dossier `UwAmp` se trouve là où vous l'avez installé (`Desktop`, `C:\`, ...).
+
+    Si vous avez dézippé l'archive à la racine du disque `C:\`, vous aurez donc des chemins du type :
+
+    - `C:\UwAmp\bin\php\php-5.4.31`
+    - `C:\UwAmp\bin\php\php-5.5.15`
+
+    Si vous avez dézippé l'archive sur votre desktop, vous aurez donc des chemins du type :
+
+    - `C:\Documents and Settings\Daishi\Bureau\UwAmp\bin\php\php-5.4.31`
+    - `C:\Documents and Settings\Daishi\Bureau\UwAmp\bin\php\php-5.5.15`
+
+    Il faudra ajouter un des chemins à la variable d'environnement `PATH` de windows. Pour ce faire, suivez [ce tuto en anglais][1] ou [celui-ci en français][2]. Notez que les chemins de la variable `PATH` sont séparés par des `;` (point-virgules).
+    De préférence, ajoutez le chemin de la version php la plus récente.
+
+    #### avec wampserver
+
+    Le dossier php se trouve dans `C:\wamp\bin\php\php[CURRENT_VERSION]` (`[CURRENT_VERSION]` dépend de la version de php).
+
+    Vous aurez donc des chemins du type :
+
+    - `C:\wamp\bin\php\php5.1.3`
+    - `C:\wamp\bin\php\php5.2.0`
+    - `C:\wamp\bin\php\php5.3.0`
+
+    Il faudra ajouter un des chemins à la variable d'environnement `PATH` de windows. Pour ce faire, suivez [ce tuto en anglais][1] ou [celui-ci en français][2]. Notez que les chemins de la variable `PATH` sont séparés par des `;` (point-virgules).
+    De préférence, ajoutez le chemin de la version php la plus récente.
+
+    ### mac os x
+
+    Sous mac, php est déjà installé.
+
+    ### linux
+
+    Avec une distrib debian / ubuntu, installez php avec la commande suivante :
+
+    ```bash
+    sudo apt-get install php5
+    ```
+
+    ### vérification de l'installation
+
+    Quand c'est fait, ouvrez une nouvelle console et testez la commande suivante :
+
+    ```bash
+    php --version
+    ```
+
+    Si vous voyez un message semblable à ce qui suit, votre configuration est ordre :
+
+    ```bash
+    PHP 5.6.0 (cli) (built: Sep 13 2014 10:36:37)
+    Copyright (c) 1997-2014 The PHP Group
+    Zend Engine v2.6.0, Copyright (c) 1998-2014 Zend Technologies
+    ```
+
+    ### le serveur web intégré de php
+
+    [PHP: Serveur web interne - Manual](http://php.net/manual/fr/features.commandline.webserver.php)
+
+    Depuis la version 5.4.0, php intègre un serveur web. Il ne peut pas être utilisé en production mais peut se rendre très utile lors du développement ou pour faire des tests.
+
+    Ouvrez une nouvelle console, testez la commande suivante :
+
+    ```bash
+    php -S localhost:8000
+    ```
+
+    Essayez l'adresse [http://localhost:8000/](http://localhost:8000/) dans votre navigateur.
+
+    [1]: http://www.computerhope.com/issues/ch000549.htm                "How to set the path in Microsoft Windows"
+    [2]: https://www.java.com/fr/download/help/path.xml                 "Configuration ou modification de la variable système PATH"
+    [3]: http://php.net/manual/fr/features.commandline.webserver.php    "PHP: Serveur web interne - Manual"
+

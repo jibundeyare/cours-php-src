@@ -1,0 +1,27 @@
+content: |
+    ## sommaire
+
+    - [démarrage](demarrage.html)
+    - [la syntaxe](syntaxe.html)
+    - [les variables définies par l'utilisateur](variables-utilisateur.html)
+    - [les constantes](constantes.html)
+    - [les opérateurs](operateurs.html)
+    - [les structure de contrôle conditionnelles (`if`, `switch`, ...)](structures-conditionnelles.html)
+    - [l'algèbre de Boole (`&&`, `||`)](algebre-boole.html)
+    - [les boucles](boucles.html)
+    - [la portée des variables](portee.html)
+    - [les variables prédéfinies (`$_GET`, `$_POST`, ...)](variables-predefinies.html)
+    - [les fonctions définies par l'utilisateur](fonctions-utilisateur.html)
+    - [les fonctions anonymes](fonctions-anonymes.html)
+    - [les fonctions internes](fonctions-internes.html)
+    - [l'inclusions de fichiers](inclusions.html)
+
+    - [la documentation](documentation.html)
+    - [la suite apache mysql php (amp)](amp.html)
+    - [php en ligne de commande](cli.html)
+    - [composer : un gestionnaire de paquets php](composer.html)
+
+    - [la ligne de commande (terminal, console, invite de commande, cli)](ligne-de-commande.html)
+    - [l'éditeur de code](editeur.html)
+    - [quelques outils du développeur](outils.html)
+
