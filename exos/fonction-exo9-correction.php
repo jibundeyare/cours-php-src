@@ -14,7 +14,7 @@ function a_plus_grand_que_b($a, $b) {
     }
 }
 
-// deuxième implémentation possible
+// autre implémentation possible
 // function a_plus_grand_b($a, $b) {
 //     if (!is_int($a) || !is_int($b)) {
 //         return false;
