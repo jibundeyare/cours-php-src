@@ -53,7 +53,6 @@ function boolean_to_string($bool) {
  * this function returns an array containing three attributes of a vehicle
  * the first attribute is the number of wheels from 2 to 4 (integer), the second attribute is the presence of pedals (boolean), the third attribute is the presence of an engine (boolean)
  *
- * @access public
  * @return array this array contains three items: array(integer, boolean, boolean)
  */
 function get_random_vehicle() {
