@@ -1,0 +1,65 @@
+content: |
+    ## Examen final février 2015
+
+    ### A) théorie
+
+    {% include php-code.html source="exam-201502/theorie.php" %}
+
+    _durée : 16 min_
+
+    ### B) les variables
+
+    {% include php-code.html source="exam-201502/variables.php" %}
+
+    _durée : 4 min_
+
+    ### C) les chaînes de caractères
+
+    {% include php-code.html source="exam-201502/chaines.php" %}
+
+    _durée : 12 min_
+
+    ### D) les tableaux simples
+
+    {% include php-code.html source="exam-201502/tableaux-simples.php" %}
+
+    _durée : 12 min_
+
+    ### E) les tableaux associatifs
+
+    {% include php-code.html source="exam-201502/tableaux-associatifs.php" %}
+
+    _durée : 12 min_
+
+    ### F) la boucle `for`
+
+    {% include php-code.html source="exam-201502/for.php" %}
+
+    _durée : 8 min_
+
+    ### G) le bloc conditionnel `if` et l'algèbre de Boole
+
+    {% include php-code.html source="exam-201502/if1.php" %}
+
+    _durée : 8 min_
+
+    ### H) les fonctions définies par l'utilisateur
+
+    {% include php-code.html source="exam-201502/fonctions.php" %}
+
+    _durée : 12 min_
+
+    ### I) correction de bug
+
+    {% include php-code.html source="exam-201502/bug1.php" %}
+
+    _durée : 4 min_
+
+    {% include php-code.html source="exam-201502/bug2.php" %}
+
+    _durée : 4 min_
+
+    {% include php-code.html source="exam-201502/bug3.php" %}
+
+    _durée : 4 min_
+

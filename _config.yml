@@ -1,13 +1,13 @@
 destination: ../cours
 
 exclude: [
-    .git
+    .git,
     .sass-cache,
     bower.json,
     bower_components,
     config.rb,
     Gruntfile.js,
-    make-sources.sh
+    make-sources.sh,
     node_modules,
     npm-debug.log,
     package.json,

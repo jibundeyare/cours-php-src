@@ -3,27 +3,64 @@ content: |
 
     [PHP: Variables prédéfinies - Manual](http://php.net/manual/fr/reserved.variables.php)
 
-    - `$argc`
-    - `$argv`
-    - `$_COOKIE`
-    - `$_ENV`
-    - `$_FILES`
-    - `$_GET`
-    - `$_POST`
-    - `$_SERVER`
-    - `$_SESSION`
+    - `$argc` permet de connaître le nombre d'argument passés en ligne de commande
+    - `$argv` permet de récupérer la valeur des arguments passés en ligne de commande
+    - `$_COOKIE` permet de stocker et récupérer des valeurs stockées dans le cookie du navigateur
+    - `$_ENV` permet de récupérer les valeurs des variables d'environnement
+    - `$_FILES` permet de récupérer les données d'un fichier envoyé par un formulaire
+    - `$_GET` permet de récupérer les données envoyées dans la barre d'adresse
+    - `$_POST` permet de récupérer les données envoyées par un formulaire
+    - `$_SERVER` permet de récupérer des valeurs définies par le serveur web
+    - `$_SESSION` permet de stocker et récupérer des valeurs durant la visite d'un internaute
+
+    Toutes les variables (excepté `$argc` et `$argv`) sont des tableaux associatifs.
+    La variable `$argv` est un tableau simple contenant les arguments passés au script en ligne de commande.
+    La variable `$argc` est de type nombre entier et indique le nombre d'éléments dans la variable `$argv`.
+
+    En ligne de commande, seules les variables `$argc`, `$argv`, `$_ENV` sont utiles.
+    Quand php est appelé par un serveur web, toutes les variables peuvent être utilisée sauf `$argc`, `$argv`.
+
+    __Note__ : consulter [les formulaires](formulaires.html) pour voir comment récupérer les données des formulaires
+
+    ### la variable `$_GET`
 
     {% include php-code.html source="code/get1.php" %}
 
     {% include php-code.html source="code/get2.php" %}
 
-    {% include php-code.html source="code/post1.php" %}
+    ### la variable `$_POST`
 
-    {% include php-code.html source="code/post2.php" %}
+    {% include php-code.html source="code/post.php" %}
 
-    {% include php-code.html source="code/server1.php" %}
+    ### la variable `$_SERVER`
 
-    {% include php-code.html source="code/session1-get.php" %}
+    {% include php-code.html source="code/server.php" %}
 
-    {% include php-code.html source="code/session1-set.php" %}
+    ### la variable `$_ENV`
+
+    {% include php-code.html source="code/env.php" %}
+
+    ### la variable `$_SESSION`
+
+    {% include php-code.html source="code/session-get.php" %}
+
+    {% include php-code.html source="code/session-set.php" %}
+
+    {% include php-code.html source="code/session-destroy.php" %}
+
+    ### la variable `$_COOKIE`
+
+    {% include php-code.html source="code/cookie-get.php" %}
+
+    {% include php-code.html source="code/cookie-set.php" %}
+
+    {% include php-code.html source="code/cookie-destroy1.php" %}
+
+    {% include php-code.html source="code/cookie-destroy2.php" %}
+
+    ### la variable `$_FILES`
+
+    {% include php-code.html source="code/file1.php" %}
+
+    {% include php-code.html source="code/file2.php" %}
 

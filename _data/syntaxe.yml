@@ -10,5 +10,11 @@ content: |
     - les instructions se terminent toutes par un signe `;` (point-virgule).
     - les signes `{` (accolade ouvrante) et `}` (accolade fermante) permettent de regrouper plusieurs instructions.
 
+    Voir aussi :
+
+    - [les variables définies par l'utilisateur](variables-utilisateur.html)
+
     {% include php-code.html source="code/syntaxe1.php" %}
+
+    {% include php-code.html source="code/syntaxe2.php" %}
 

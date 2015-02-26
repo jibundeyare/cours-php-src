@@ -37,6 +37,10 @@ content: |
 
     {% include php-code.html source="code/array2.php" %}
 
+    {% include php-code.html source="code/array3.php" %}
+
+    {% include php-code.html source="code/array4.php" %}
+
     ##### objet (object)
 
     {% include php-code.html source="code/object1.php" %}
@@ -50,26 +54,4 @@ content: |
     ##### fonction anonyme (fonction lambda, closure, callable)
 
     {% include php-code.html source="code/fonction-anonyme1.php" %}
-
-    #### transtypage (type casting)
-
-    [PHP: Manipulation de types - Manual](http://php.net/manual/fr/language.types.type-juggling.php)
-
-    {% include php-code.html source="code/transtypage-integer.php" %}
-
-    {% include php-code.html source="code/transtypage-float.php" %}
-
-    ##### fonctions de transtypage
-
-    - `boolval()`
-    - `floatval()`
-    - `intval()`
-    - `number_format()`
-    - `strval()`
-
-    ##### le transtypage booléen
-
-    [PHP: Booleans - Manual](http://php.net/manual/en/language.types.boolean.php#language.types.boolean.casting)
-
-    {% include php-code.html source="code/transtypage-booleen.php" %}
 

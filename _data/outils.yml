@@ -1,7 +1,23 @@
 content: |
     ## quelques outils du développeur
 
-    ### un gestionnaire de versions
+    ### FileZilla : un outil de transfert de fichiers
+
+    __Attention__ : cet outil est juste indispensable !
+
+    [FileZilla - The free FTP solution](https://filezilla-project.org/)
+
+    ### KDiff3 : un comparateur de fichiers et de dossiers
+
+    [KDiff3 - Homepage](http://kdiff3.sourceforge.net/)
+
+    Voir [KDiff3 - Browse Files at SourceForge.net](http://sourceforge.net/projects/kdiff3/files/)
+
+    ### Meld : un autre comparateur de fichiers et de dossiers
+
+    [Meld](http://meldmerge.org/)
+
+    ### Git : un gestionnaire de versions
 
     [Git](http://www.git-scm.com/)
 
@@ -23,7 +39,7 @@ content: |
     apt-get install git
     ```
 
-    ### un gestionnaire de paquets pour mac os x
+    ### Homebrew : un gestionnaire de paquets pour mac os x
 
     [Homebrew — The missing package manager for OS X](http://brew.sh/)
 
@@ -31,7 +47,7 @@ content: |
     ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
     ```
 
-    ### un gestionnaire de paquets pour windows
+    ### Chocolatey : un gestionnaire de paquets pour windows
 
     [Chocolatey Gallery](https://chocolatey.org/)
 
@@ -39,7 +55,7 @@ content: |
     @powershell -NoProfile -ExecutionPolicy unrestricted -Command "iex ((new-object net.webclient).DownloadString('https://chocolatey.org/install.ps1'))" && SET PATH=%PATH%;%ALLUSERSPROFILE%\chocolatey\bin
     ```
 
-    ### les outils de développement gnu pour windows
+    ### Cygwin : les outils de développement gnu pour windows
 
     [Cygwin](http://cygwin.com/)
 

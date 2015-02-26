@@ -1,0 +1,19 @@
+content: |
+    ## les requêtes sql
+
+    {% include php-code.html source="code/mysqli-connect.php" %}
+
+    {% include php-code.html source="code/sql-select.php" %}
+
+    {% include php-code.html source="code/sql-select-single.php" %}
+
+    {% include php-code.html source="code/sql-select-single-sprintf.php" %}
+
+    {% include php-code.html source="code/sql-insert.php" %}
+
+    {% include php-code.html source="code/sql-insert-sprintf.php" %}
+
+    {% include php-code.html source="code/sql-update.php" %}
+
+    {% include php-code.html source="code/sql-update-sprintf.php" %}
+

@@ -5,7 +5,11 @@ content: |
 
     > Une constante est un identifiant (un nom) qui représente une valeur simple. Comme son nom le suggère, cette valeur ne peut jamais être modifiée durant l'exécution du script (sauf les constantes magiques). Par défaut, le nom d'une constante est sensible à la casse. Par convention, les constantes sont toujours en majuscules. 
 
-    __En résumé__ : contrairement aux variables, les constantes définies par l'utilisateur ne peuvent être modifiées, à moins de ne réutiliser la fonction `define()`.
+    __En résumé__ : contrairement aux variables, les constantes définies par l'utilisateur ne peuvent être modifiées une fois qu'elles ont été définies.
 
-    {% include php-code.html source="code/constante.php" %}
+    {% include php-code.html source="code/constante1.php" %}
+
+    {% include php-code.html source="code/constante2.php" %}
+
+    {% include php-code.html source="code/constante3.php" %}
 

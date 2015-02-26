@@ -4,3 +4,21 @@ content: |
     - [PHP: Portée des variables - Manual](http://php.net/manual/fr/language.variables.scope.php)
     - [PHP: $GLOBALS - Manual](http://php.net/manual/fr/reserved.variables.globals.php)
 
+    __Attention__ : il vaut mieux éviter d''utiliser les mots clés `global` et la variable `$GLOBALS` car à terme ces techniques peuvent poser des problèmes de lisibilité et d'architecture du code.
+
+    Il faut noter cependant que le CMS [WordPress](https://wordpress.org/) fait un usage extensif du mot clé `global`. Il est donc possible d'utiliser cette fonctionnalité dans une application d'envergure.
+
+    {% include php-code.html source="code/portee1.php" %}
+
+    {% include php-code.html source="code/portee2.php" %}
+
+    {% include php-code.html source="code/portee3.php" %}
+
+    {% include php-code.html source="code/portee4.php" %}
+
+    {% include php-code.html source="code/portee5.php" %}
+
+    {% include php-code.html source="code/portee6.php" %}
+
+    {% include php-code.html source="code/portee7.php" %}
+

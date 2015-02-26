@@ -22,6 +22,8 @@ content: |
 
     {% include php-code.html source="code/while4.php" %}
 
+    {% include php-code.html source="code/while5.php" %}
+
     {% include php-code.html source="code/do_while1.php" %}
 
     {% include php-code.html source="code/do_while2.php" %}

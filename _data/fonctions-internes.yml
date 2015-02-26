@@ -3,13 +3,23 @@ content: |
 
     [PHP: Function Reference - Manual](http://php.net/manual/en/funcref.php)
 
+    Php fourni un grand nombre de fonctions.
+    Ces fonctions permettent par exemple :
+
+    - d'afficher un message
+    - d'effectuer des opérations mathématiques
+    - de comparer des variables
+    - de manipuler des chaînes de caractère
+    - de manipuler des tableaux
+    - de débogger du code php
+    - de lire ou écrire dans un fichier
+    - de lire ou écrire dans une base de données
+
     {% include php-code.html source="code/appel-fonction1.php" %}
 
     {% include php-code.html source="code/appel-fonction2.php" %}
 
     {% include php-code.html source="code/appel-fonction3.php" %}
-
-    {% include php-code.html source="code/appel-fonction4.php" %}
 
     ### fonctions liées à l'exécution du code php
 
@@ -19,7 +29,8 @@ content: |
     - `sleep()`
     - `usleep()`
 
-    __Attention__ : l'usage de la fonction `eval()` est fortement déconseillé car elle pose de sérieux problèmes de sécurité.
+    __Attention__ : __eval is evil !__ L'usage de la fonction `eval()` est fortement déconseillé car elle pose de sérieux problèmes de sécurité.
+    Voir [PHP: eval - Manual](http://php.net/manual/en/function.eval.php)
 
     ### fonctions de débogage (debugging)
 
@@ -135,6 +146,9 @@ content: |
     - `parse_str()`
     - `parse_url()`
 
+    __Attention__ : la fonction `parse_str()` utilisée sans son deuxième paramètre pose de sérieux problèmes de sécurité. Utilisez toujours cette fonction avec son deuxième paramètre.
+    Voir [PHP: parse_url - Manual](http://php.net/manual/en/function.parse-url.php)
+
     html :
 
     - `html_entity_decode()`
@@ -165,10 +179,13 @@ content: |
     - `array_multisort()`
     - `compact()`
     - `count()`
-    - `extract(à`
+    - `extract()`
     - `in_array()`
     - `list()`
     - `sort()`
+
+    __Attention__ : L'usage de la fonction `extract()` est fortement déconseillé car elle pose de sérieux problèmes de sécurité.
+    Voir [PHP: extract - Manual](http://php.net/manual/fr/function.extract.php#refsect1-function.extract-notes)
 
     ### fonctions de lecture / écriture de fichiers
 

@@ -11,6 +11,8 @@ content: |
     - `include_once`
     - `require_once`
 
+    {% include php-code.html source="code/include.php" %}
+
     {% include php-code.html source="code/include-warning.php" %}
 
     {% include php-code.html source="code/require-fatal-error.php" %}
@@ -19,9 +21,11 @@ content: |
 
     {% include php-code.html source="code/include_multi.php" %}
 
+    {% include php-code.html source="code/include_once1.php" %}
+
     {% include php-code.html source="code/include_multi_fatal_error.php" %}
 
-    {% include php-code.html source="code/include_once.php" %}
+    {% include php-code.html source="code/include_once2.php" %}
 
     {% include php-code.html source="code/require_once.php" %}
 

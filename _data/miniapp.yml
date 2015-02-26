@@ -1,0 +1,72 @@
+content: |
+    ## exemple d'une mini application
+
+    ### les pages
+
+    Cette mini application contient les pages suivantes :
+
+    - une page de connexion
+    - une page d'inscription
+    - une page qui permet de se faire envoyer un nouveau mot de passe par mail
+    - une home page sécurisée
+    - une page permettant de mofidier ses informationjs personnelles
+    - une page permettant de se déconnecter
+    - une page d'erreur que l'on peut afficher lorsqu'un problème technique se présente
+
+    Cette mini application possède les particularités suivantes :
+
+    - l'utilisation d'un fichier unique de connexion à la base de données
+    - l'accès aux pages sécurisées sans s'être connecté renvoit vers la page de connexion
+    - certaines fonctionnalités sont isolées dans des fichiers de librairie afin de faciliter la réutilisation dans ce projet et dans d'autres projets
+    - les best practice de la sécurité sont respectées :
+      - stockage des mots de passe sous forme de hash
+      - échappement des variables avant utilisation dans du code sql
+      - échappement des variables avant utilisation dans du code html
+    - toutes les erreurs renvoient vers une page d'erreur dédiée
+
+    ### l'organisation des fichiers
+
+    - le dossier `data` contient le fichier de la base de données
+    - le dossier `lib` contient les fichiers des librairies
+    - le dossier `web` contient les fichiers des pages de l'application
+
+    ### le fichier de la base de données
+
+    __Note__ : n'hésitez pas à changer le nom de la base de données. Pensez juste à répercuter la modification dans le fichier de connexion.
+
+      {% include sql-code.html source="code/miniapp/data/bdd-test.sql" %}
+
+    ### le fichier de connexion à la base de données
+
+    __Attention__ : vous devez adpater ce script avec les réglages de votre base de données (serveur, login, mot de passe, nom de la base de données).
+
+    {% include php-code.html source="code/miniapp/web/mysqli-connect.php" %}
+
+    ### les fichiers des pages
+
+    {% include php-code.html source="code/miniapp/web/connexion.php" %}
+
+    {% include php-code.html source="code/miniapp/web/deconnexion.php" %}
+
+    {% include php-code.html source="code/miniapp/web/erreur-500.php" %}
+
+    {% include php-code.html source="code/miniapp/web/home.php" %}
+
+    {% include php-code.html source="code/miniapp/web/index.php" %}
+
+    {% include php-code.html source="code/miniapp/web/inscription.php" %}
+
+    {% include php-code.html source="code/miniapp/web/mot-de-passe-oublie.php" %}
+
+    {% include php-code.html source="code/miniapp/web/profil.php" %}
+
+    ### les fichiers des librairies
+
+    {% include php-code.html source="code/miniapp/lib/http.php" %}
+
+    {% include php-code.html source="code/miniapp/lib/password.php" %}
+
+    {% include php-code.html source="code/miniapp/lib/security.php" %}
+
+    {% include php-code.html source="code/miniapp/lib/session.php" %}
+

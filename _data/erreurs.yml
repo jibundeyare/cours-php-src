@@ -1,0 +1,11 @@
+content: |
+    ## l'affichage d'erreurs
+
+    [PHP: error_reporting - Manual](http://php.net/manual/fr/function.error-reporting.php)
+
+    {% include php-code.html source="code/error-reporting1.php" %}
+
+    {% include php-code.html source="code/bug.php" %}
+
+    {% include php-code.html source="code/error-reporting2.php" %}
+

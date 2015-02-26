@@ -1,0 +1,11 @@
+content: |
+    ## le paiement en ligne
+
+    ### le script de paybox
+
+    Ce script interroge le serveur de test de la société Paybox avec un numéro de carte bleu de test.
+
+    [Exemple d'implémentation - Paybox](http://www1.paybox.com/espace-integrateur-documentation/les-solutions-paybox-direct-et-paybox-direct-plus/exemple-dimplementation/)
+
+      {% include php-code.html source="code/paybox.php" %}
+

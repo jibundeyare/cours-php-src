@@ -1,0 +1,34 @@
+content: |
+    ### le transtypage (type casting)
+
+    [PHP: Manipulation de types - Manual](http://php.net/manual/fr/language.types.type-juggling.php)
+
+    La plupart du temps, le transtypage est fait defaçon implicite par php.
+    Mais dans certains cas, il est nécessaire de faire un transtypage de façon explicite.
+    Deux méthodes peuvent être utlisées :
+
+    1. l'usage de fonctions
+    2. l'usage de parenthèses
+
+    #### les fonctions de transtypage
+
+    - `boolval()`
+    - `floatval()`
+    - `intval()`
+    - `number_format()`
+    - `strval()`
+
+    #### le transtypage en nombre entier
+
+    {% include php-code.html source="code/transtypage-integer.php" %}
+
+    #### le transtypage en nombre à virgule flottante
+
+    {% include php-code.html source="code/transtypage-float.php" %}
+
+    #### le transtypage en booléen
+
+    [PHP: Booleans - Manual](http://php.net/manual/en/language.types.boolean.php#language.types.boolean.casting)
+
+    {% include php-code.html source="code/transtypage-booleen.php" %}
+

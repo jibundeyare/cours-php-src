@@ -1,0 +1,66 @@
+content: |
+    ## les formulaires
+
+    Les champs suivant ne renvoient qu'une seule valeur :
+
+    - champ `input` de type `text`
+    - champ `input` de type `password`
+    - champ `input` de type `hidden`
+    - champ `input` de type `radio`
+    - champ `input` de type `file`
+    - champ `select`
+    - champ `textarea`
+
+    Les champs suivant renvoient plusieurs valeurs sous forme de tableau :
+
+    - champ `input` de type `checkbox`
+    - champ `select` avec l'attribut `multiple="multiple"`
+
+    __Note__ : tous les champs peuvent être configurés pour renvoyer plusieurs valeurs sous forme de tableau en ajoutant des crochets à l'attribut `name`.
+
+    ```html
+    <input name="auteurs[]" type="text" value="" /><br />
+    <input name="auteurs[]" type="text" value="" /><br />
+    <input name="auteurs[]" type="text" value="" /><br />
+    ```
+
+    Voir aussi :
+
+    - [les variables prédéfinies (`$_GET`, `$_POST`, `$_SESSION`, ...)](variables-predefinies.html)
+
+    {% include php-code.html source="code/form-validation1.php" %}
+
+    {% include php-code.html source="code/form-validation2.php" %}
+
+    {% include php-code.html source="code/form-validation3.php" %}
+
+    {% include php-code.html source="code/form-input-text.php" %}
+
+    {% include php-code.html source="code/form-input-password.php" %}
+
+    {% include php-code.html source="code/form-input-hidden.php" %}
+
+    {% include php-code.html source="code/form-input-radio.php" %}
+
+    {% include php-code.html source="code/form-input-checkbox.php" %}
+
+    {% include php-code.html source="code/form-input-file.php" %}
+
+    {% include php-code.html source="code/form-input-file-multi.php" %}
+
+    {% include php-code.html source="code/form-textarea.php" %}
+
+    {% include php-code.html source="code/form-select.php" %}
+
+    {% include php-code.html source="code/form-select-optgroup.php" %}
+
+    {% include php-code.html source="code/form-select-multiple.php" %}
+
+    {% include php-code.html source="code/form-select-multiple-optgroup.php" %}
+
+    {% include php-code.html source="code/form-etape1.php" %}
+
+    {% include php-code.html source="code/form-etape2.php" %}
+
+    {% include php-code.html source="code/form-etape3.php" %}
+

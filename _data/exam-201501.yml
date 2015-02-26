@@ -1,0 +1,71 @@
+content: |
+    ## Examen blanc janvier 2015
+
+    ### _définitions_
+
+    _alphanumérique = mot composé de lettres et de chiffres_
+
+    ### A) les opérateurs
+
+    {% include php-code.html source="exam-201501/operateurs-exo.php" %}
+
+    _durée : 2 min_
+
+    ### B) les chaînes de caractères
+
+    {% include php-code.html source="exam-201501/chaines-exo.php" %}
+
+    _durée : 8 min_
+
+    ### C) les tableaux simples
+
+    {% include php-code.html source="exam-201501/tableaux-simples.php" %}
+
+    _durée : 12 min_
+
+    ### D) les tableaux associatifs
+
+    {% include php-code.html source="exam-201501/tableaux-associatifs.php" %}
+
+    _durée : 12 min_
+
+    ### E) la boucle `for`
+
+    {% include php-code.html source="exam-201501/for-exo.php" %}
+
+    _durée : 8 min_
+
+    ### F) le bloc conditionnel `if` et l'algèbre de Boole
+
+    {% include php-code.html source="exam-201501/if-exo1.php" %}
+
+    _durée : 8 min_
+
+    {% include php-code.html source="exam-201501/if-exo2.php" %}
+
+    _durée : 8 min_
+
+    ### G) les fonctions définies par l'utilisateur
+
+    {% include php-code.html source="exam-201501/fonctions-exo.php" %}
+
+    _durée : 12 min_
+
+    ### H) les fonctions internes
+
+    {% include php-code.html source="exam-201501/fonctions-internes-exo.php" %}
+
+    _durée : 4 min_
+
+    ### I) la syntaxe
+
+    {% include php-code.html source="exam-201501/syntaxe-exo1.php" %}
+
+    _durée : 4 min_
+
+    ### J) la documentation
+
+    {% include php-code.html source="exam-201501/documentation-exo.php" %}
+
+    _durée : 12 min_
+
