@@ -1,0 +1,55 @@
+content: |
+    ## Examen deuxième session mai 2015
+
+    ### théorie
+
+    {% include php-code.html source="exam-201505/00-theorie.php" %}
+
+    ### correction de bug
+
+    {% include php-code.html source="exam-201505/10-bug.php" %}
+
+    {% include php-code.html source="exam-201505/11-bug.php" %}
+
+    {% include php-code.html source="exam-201505/12-bug.php" %}
+
+    ### les variables
+
+    {% include php-code.html source="exam-201505/20-variables.php" %}
+
+    {% include php-code.html source="exam-201505/21-variables.php" %}
+
+    ### les chaînes de caractères
+
+    {% include php-code.html source="exam-201505/30-chaines.php" %}
+
+    {% include php-code.html source="exam-201505/31-chaines.php" %}
+
+    ### les tableaux simples
+
+    {% include php-code.html source="exam-201505/40-tableaux-simples.php" %}
+
+    ### les tableaux associatifs
+
+    {% include php-code.html source="exam-201505/41-tableaux-associatifs.php" %}
+
+    ### le bloc conditionnel `if` et l'algèbre de Boole
+
+    {% include php-code.html source="exam-201505/50-if.php" %}
+
+    {% include php-code.html source="exam-201505/51-if.php" %}
+
+    ### la boucle `for`
+
+    {% include php-code.html source="exam-201505/60-for.php" %}
+
+    {% include php-code.html source="exam-201505/61-for.php" %}
+
+    ### la boucle `foreach`
+
+    {% include php-code.html source="exam-201505/70-foreach.php" %}
+
+    ### les fonctions définies par l'utilisateur
+
+    {% include php-code.html source="exam-201505/80-fonctions.php" %}
+
