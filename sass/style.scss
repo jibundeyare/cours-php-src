@@ -1,8 +1,20 @@
+figure > pre {
+	border: none;
+	margin-bottom: 1rem;
+
+	& > code table {
+		width: 100%;
+	}
+}
+
+figure {
+	margin: 0;
+}
+
 pre {
 	background-color: #f8f8f8;
 	border: 1px solid #dfdfdf;
 	border-radius: 5px;
-	margin-bottom: 1rem;
 	padding: 0.125rem 0.3125rem 0.0625rem;
 
 	code {
@@ -19,5 +31,10 @@ pre {
 			color: #999999;
 		}
 	}
+}
+
+.gutter {
+	padding-right: 0;
+	width: 4rem;
 }
 
