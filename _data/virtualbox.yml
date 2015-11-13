@@ -1,0 +1,150 @@
+content: |
+    ## virtualbox + vagrant + cnam box
+
+    Ce chapitre décrit la procédure d'installation d'une machine virtuelle (vm) préconfigurée : la cnam box.
+
+    N.B. Les `x` qui aparaissent dans les noms de fichiers correspondent à des chiffres.
+    Veillez à utiliser le nom réel des fichiers lorsque vous tapez une commande.
+
+    ### installation de virtualbox + vagrant pour windows
+
+    - copiez les dossiers `virtualbox`, `vagrant` et `putty` sur votre ordinateur
+    - lancez `VirtualBox-x.x.x-xxxxxx-Win.exe`
+    - lancez `vagrant_x.x.x.msi`
+    - lancez `putty-x.xx-installer.exe`
+
+    ### installation de virtualbox + vagrant pour mac os x
+
+    - copiez les dossiers `virtualbox` et `vagrant` sur votre ordinateur
+    - lancez `VirtualBox-x.x.x-xxxxxx-OSX.dmg`
+    - lancez `vagrant_x.x.x.dmg`
+
+    ### installation de virtualbox + vagrant pour linux
+
+    - ouvrir un terminal / une ligne de commande
+    - tapez les commandes suivantes :
+
+      ```bash
+      sudo apt-get update
+      sudo apt-get install virtualbox
+      sudo apt-get install vagrant
+      ```
+
+    ### installation de la vm cnam-box
+
+    1. dans le dossier de votre `home` (le dossier qui porte votre nom d'utilisateur), créez un dossier `www`, `projets` ou `web` qui contiendra les projets web
+    2. dézippez le contenu du fichier `cnam.dev-x.x.x.zip` dans le dossier des projets web
+    3. vous devriez avoir l'arborescence suivante :
+
+       ```
+       home/
+       L www/
+         L cnam.dev/
+           L bin/
+           L data/
+           L logs/
+             L access.log
+             L error.log
+           L www/
+             L index.php
+           L Vagrantfile
+       ```
+    4. si votre processeur fonctionne en 64 bit, copiez `cnam-box-64-x.x.x.box` dans le dossier `cnam.dev`
+      si votre processeur ne fonctionne qu'en 32 bit ou si vous avez un doute, copiez `cnam-box-32-x.x.x.box` dans le dossier `cnam.dev`
+    5. ouvrir un terminal / une ligne de commande
+    6. tapez les commandes suivantes :
+
+       ```bash
+       cd
+       cd www
+       cd cnam.dev
+       ```
+    7. importez la vm cnam box
+       - si vous utilisez la cnam-box 32 bit, tapez la commande suivante :
+
+         ```bash
+         vagrant box add cnam-box-32 cnam-box-32-x.x.x.box
+         ```
+       - si vous utilisez la cnam-box 64 bit, tapez la commande suivante :
+
+         ```bash
+         vagrant box add cnam-box-64 cnam-box-64-x.x.x.box
+         ```
+    8. seulement si vous utilisez la cnam-box 32 bit, ouvrez le fichier `Vagrant` avec votre éditeur de code, enlevez la dièse `#` de l& ligne 13 et ajoutez une dièse `#` devant la ligne 14
+    9. tapez les commandes suivantes :
+
+        ```bash
+        vagrant up
+        vagrant ssh
+        ```
+    10. si vous obtenez le résultat suivant, c'est que la vm et la connexion ssh fonctionnent :
+
+        ```
+        Welcome to Ubuntu 12.04 LTS (GNU/Linux 3.2.0-23-generic)
+
+        * Documentation:  https://help.ubuntu.com/
+        New release '14.04.3 LTS' available.
+        Run 'do-release-upgrade' to upgrade to it.
+
+        Welcome to your Vagrant-built virtual machine.
+        Last login: Thu Nov 12 16:17:07 2015 from 10.0.2.2
+        vagrant@precise32:~$
+        ```
+    11. ouvrez votre navigateur web (Internet Explorer, FireFox, Safari ou autre) et entrez l'adresse `192.168.33.10`.
+    12. si vous obtenez le résultat suivant, c'est que le serveur web fonctionne :
+
+        ```
+        Hello World!
+        ```
+    13. pour arrêter la vm, tapez les commandes suivantes depuis la connexion ssh :
+
+        ```bash
+        exit
+        vagrant halt
+        ```
+
+    ### les erreurs
+
+    Si vagrant ne démarre pas la vm, lancez virtualbox et démarrez la vm cnamdev_default_..._...
+    Le message d'erreur qui s'affichera permettra de diagnostiquer le problème.
+
+    #### erreur : `VT-x is not available`
+
+    ![VT-x not available][vtx-not-available-win]
+    _virtualbox avec windows_
+
+    ![VT-x not available][vtx-not-available-linux]
+    _virtualbox avec linux_
+
+    [vtx-not-available-win]: img/virtualbox/virtualbox-error-vtx-not-available-windows.png "VT-x not available"
+    [vtx-not-available-linux]: img/virtualbox/virtualbox-error-vtx-not-available-linux.png "VT-x not available"
+
+    __solution 1 : activer la virtualisation dans le BIOS (VT-x pour Intel et AMD-V pour AMD)__
+
+    - [BIOS : Forum Aux Questions - Aide de Windows](http://windows.microsoft.com/fr-fr/windows/bios-faq#1TC=windows-7)
+    - [BIOS - Accéder au setup du Bios](http://www.commentcamarche.net/faq/389-bios-acceder-au-setup-du-bios)
+    - [How to Enable Intel Virtualization Technology (vt-x) and amd-v in BIOS - Updated](http://www.sysprobs.com/disable-enable-virtualization-technology-bios)
+
+    Si aucune option VT-x ou AMD-V n'est disponible dans le BIOS, c'est que le PC ne gère pas la virtualisation.
+
+    __solution 2 : désactiver VT-x dans virtualbox et utiliser une vm 32 bit__
+
+    - copiez `cnam-box-32-x.x.x.box` dans le dossier `cnam.dev`
+    - ouvrez le fichier `Vagrant` avec votre éditeur de code :
+      - enlevez la dièse `#` au début de la ligne 13 et ajoutez une dièse `#` au début de la ligne 14
+      - enlevez les dièses `#` au début des lignes 65, 66, et 67
+    - reprenez l'installation de la vm cnam-box à partir de l'étape 7
+
+    #### erreur : `VT-x is disabled`
+
+    ![VT-x is disabled][vtx-is-disabled-win]
+    _virtualbox avec windows_
+
+    [vtx-is-disabled-win]: img/virtualbox/virtualbox-error-vtx-is-disabled-windows.png "VT-x is disabled"
+
+    __solution : activer la virtualisation dans le BIOS (VT-x pour Intel et AMD-V pour AMD)__
+
+    - [BIOS : Forum Aux Questions - Aide de Windows](http://windows.microsoft.com/fr-fr/windows/bios-faq#1TC=windows-7)
+    - [BIOS - Accéder au setup du Bios](http://www.commentcamarche.net/faq/389-bios-acceder-au-setup-du-bios)
+    - [How to Enable Intel Virtualization Technology (vt-x) and amd-v in BIOS - Updated](http://www.sysprobs.com/disable-enable-virtualization-technology-bios)
+
