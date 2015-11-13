@@ -8,9 +8,7 @@
 
     <a href="{{ source_path }}">{{ source_path }}</a>
 
-    {% highlight php %}
-    {% include_relative {{ source_path }} %}
-    {% endhighlight %}
+    {% highlight php linenos %}{% include_relative {{ source_path }} %}{% endhighlight %}
 
 {% endfor %}
 
