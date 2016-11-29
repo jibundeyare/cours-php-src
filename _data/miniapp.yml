@@ -18,7 +18,7 @@ content: |
     - l'utilisation d'un fichier unique de connexion à la base de données
     - l'accès aux pages sécurisées sans s'être connecté renvoit vers la page de connexion
     - certaines fonctionnalités sont isolées dans des fichiers de librairie afin de faciliter la réutilisation dans ce projet et dans d'autres projets
-    - les best practice de la sécurité sont respectées :
+    - les best practices de la sécurité sont respectées :
       - stockage des mots de passe sous forme de hash
       - échappement des variables avant utilisation dans du code sql
       - échappement des variables avant utilisation dans du code html
