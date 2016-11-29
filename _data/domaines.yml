@@ -11,21 +11,15 @@ content: |
 
     En tant qu'administrateur, ouvrez avec votre éditeur de code favori le fichier qui se trouve à cet emplacement :
 
-    ```bash
-    %SystemRoot%\System32\drivers\etc\hosts
-    ```
+    `%SystemRoot%\System32\drivers\etc\hosts`
 
     La pluart du temps, votre `%SystemRoot%` est `C:`, ce qui donne ceci :
 
-    ```bash
-    C:\Windows\System32\drivers\etc\hosts
-    ```
+    `C:\Windows\System32\drivers\etc\hosts`
 
     Ajoutez-y la ligne suivante à la fin du fichier :
 
-    ```bash
-    192.168.33.10 cnam.dev
-    ```
+    `192.168.33.10 cnam.dev`
 
     ### mac os x + linux
 
@@ -33,21 +27,15 @@ content: |
 
     Le plus simple est d'utiliser `nano` en ligne de commande :
 
-    ```bash
-    sudo nano /etc/hosts
-    ```
+    `sudo nano /etc/hosts`
 
     Avec `nano`, vos devez utiliser la combinaison de touches `CTRL O` pour enregistrer et pour sortir `CTRL X`.
 
     En tant qu'administrateur, ouvrez avec votre éditeur de code favori le fichier qui se trouve à cet emplacement :
 
-    ```bash
-    /etc/hosts
-    ```
+    `/etc/hosts`
 
     Ajoutez-y la ligne suivante à la fin du fichier :
 
-    ```bash
-    192.168.33.10 cnam.dev
-    ```
+    `192.168.33.10 cnam.dev`
 

@@ -28,22 +28,27 @@ content: |
     - [exemple d'une mini application](miniapp.html)
     - [le paiement en ligne](paiement.html)
 
-    ### annexes
+    ### annexes php
 
     - [se documenter](documentation.html)
-    - [virtualbox + vagrant + cnam box](virtualbox.html)
-    - [nom de domaines locaux](domaines.html)
-    - [git + github / bitbucket / gitlab](git.html)
-    - la configuration du`virtualhost` (_en cours de rédaction_)
-    - [la suite apache mysql php (amp)](amp.html)
     - [php en ligne de commande](cli.html)
     - [composer : un gestionnaire de paquets php](composer.html)
-    - [wordpress](wordpress.html)
-    - [phpdoc](phpdoc.html)
+    - [wordpress](wordpress.html) _(en cours de rédaction)_
+    - [phpdoc](phpdoc.html) _(en cours de rédaction)_
+
+    ### annexes développeur
 
     - [l'éditeur de code](editeur.html)
     - [quelques outils du développeur](outils.html)
-    - [la ligne de commande (terminal, console, invite de commande, cli)](ligne-de-commande.html)
+    - [la ligne de commande / le terminal / la console / l'invite de commande / cli](ligne-de-commande.html)
+    - [git / github / bitbucket / gitlab](git.html)
+
+    ### annexes administrateur système
+
+    - [virtualbox + vagrant](virtualbox.html)
+    - [nom de domaines locaux](domaines.html)
+    - [la configuration du`virtualhost`](virtualhost.html) _(en cours de rédaction)_
+    - [la suite apache mysql php / lamp / wamp / mamp](amp.html)
 
     ### liste de tous les codes sources
 
