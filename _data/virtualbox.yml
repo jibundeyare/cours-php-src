@@ -179,7 +179,7 @@ content: |
       vagrant halt
       ```
 
-    ### Remplacer une vm cnam-box par une version plus récente
+    ### Remplacer une vm par une version plus récente
 
     Au moment d'installer la vm avec `vagrant box add`, il se peut qu'une ancienne version soit déjà présente et vagrant plante avec l'erreur suivante :
 

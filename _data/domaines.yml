@@ -19,9 +19,9 @@ content: |
 
     Ajoutez-y la ligne suivante à la fin du fichier :
 
-    `192.168.33.10 cnam.dev`
+    `192.168.33.10 php01.cnam.dev`
 
-    ### mac os x + linux
+    ### Mac OS + Linux
 
     __Attention : vous devez ouvir votre éditeur de code en tant qu'administrateur pour pouvoir faire les modifications nécessaires.__
 
@@ -37,5 +37,5 @@ content: |
 
     Ajoutez-y la ligne suivante à la fin du fichier :
 
-    `192.168.33.10 cnam.dev`
+    `192.168.33.10 php01.cnam.dev`
 

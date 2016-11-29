@@ -9,7 +9,7 @@ content: |
 
     [Comment ouvrir l'Invite de commande sur Windows ? - Lecoindunet.com](http://www.lecoindunet.com/comment-ouvrir-l-invite-de-commande-sur-windows-320)
 
-    #### avec Mac OS X
+    #### avec Mac OS
 
     Voir ce tuto :
 
@@ -45,7 +45,7 @@ content: |
     cd /D %HOMEPATH%
     ```
 
-    #### avec Mac OS X et Linux
+    #### avec Mac OS et Linux
 
     ```bash
     cd ~
@@ -63,23 +63,27 @@ content: |
     cd ..
     ```
 
-    ###  se rendre dans le dossier du projet web `cnam.dev`
+    ###  se rendre dans le dossier du projet web `php01.cnam.dev`
 
     Admettons que le dossier projet se nomme `www`.
 
-    #### avec Windows
+    #### avec Windows si le dossier `www` est dans la home
 
     ```bash
     cd /D %HOMEPATH%
-    cd www
-    cd cnam.dev
+    cd www/php01.cnam.dev
     ```
 
-    #### avec Mac OS X et Linux
+    #### avec Windows si le dossier `www` est à la racine du disque `C:`
 
     ```bash
-    cd ~
-    cd www
-    cd cnam.dev
+    C:
+    cd C:/www/php01.cnam.dev
+    ```
+
+    #### avec Mac OS et Linux
+
+    ```bash
+    cd ~/www/php01.cnam.dev
     ```
 
