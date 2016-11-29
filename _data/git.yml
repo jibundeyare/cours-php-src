@@ -1,0 +1,127 @@
+content: |
+    ## git + github / bitbucket / gitlab
+
+    [le sote officiel de git](http://www.git-scm.com/)
+
+    Git est un gestionnaire de code source aussi un appelé un gestionnaire de version.
+
+    ### installation pour windows
+
+    - télécharger l'installeur git depuis [Git - Downloading Package](http://www.git-scm.com/download/win)
+    - puis lancer l'installeur.
+
+    __NB__ Ouvrir `git-bash` dans la liste des programmes pour utiliser git.
+
+    ### installation pour max os x
+
+    - télécharger l'installeur git depuis [Git - Downloading Package](http://www.git-scm.com/download/mac)
+    - puis lancer l'installeur.
+    - terminer l'installation en ouvrant un terminal et en tapant les commandes suivantes :
+
+    ```bash
+    echo "PATH=/usr/local/git/bin:\$PATH" >> ~/.bash_profile
+    source ~/.bash_profile
+    ```
+
+    ### installation pour linux
+
+    Avec Debian / Ubuntu
+
+    ```bash
+    sudo apt-get install git
+    ```
+
+    ### configurer git
+
+    Avant votre première utilisation, vous devez configurer `git`.
+
+    - ouvrez une ligne de commande (avec windows, utilisez `git-bash` dans la liste des programmes)
+    - tapez les commandes suivantes (avec vos coordonées réelles) :
+
+        git config --global user.name "Prénom Nom"
+        git config --global user.email "email@domaine.com"
+
+    ### créer un repository
+
+    - ouvrez une ligne de commande (avec windows, utilisez `git-bash` dans la liste des programmes)
+    - rendez-vous dans le dossier `www/` du projet (référez vous au chapitre sur (la ligne de commande)[ligne-de-commande.html] si vous avez un doute)
+      si vous tapez `ls` (`dir` avec windows), vous devriez voir le fichier `index.php`
+    - tapez la commande suivante :
+
+      ```bash
+      git init
+      ```
+      git devrait afficher :
+
+      ```bash
+      Dépôt Git vide initialisé dans /home/daishi/www/cnam.dev/www/.git/
+      ```
+
+    ### enregistrer un commit
+
+    - tapez la commande suivante pour voir l'état du repository ;
+
+      ```bash
+      git status
+      ```
+
+      avant le premier commit, git devrait afficher :
+
+      ```bash
+      Sur la branche master
+
+      Validation initiale
+
+      Fichiers non suivis:
+        (utilisez "git add <fichier>..." pour inclure dans ce qui sera validé)
+
+              index.php
+
+      aucune modification ajoutée à la validation mais des fichiers non suivis sont pré
+      ```
+
+    - tapez la commande suivante pour que git suive le fichier :
+
+      ```bash
+      git add index.php 
+      ```
+
+    - tapez la commande suivante pour enregistrer un commit :
+
+      ```bash
+      git commit -m "Premier commmit"
+      ```
+
+      git devrait afficher :
+
+      ```bash
+      [master (commit racine) 532146c] Premier commit
+      1 file changed, 114 insertions(+)
+      create mode 100644 index.php
+      ```
+
+    ### voir l'historique
+
+    - tapez la commande suivante pour voir l'historique :
+
+      ```bash
+      git log
+      ```
+
+      git devrait afficher :
+
+      ```bash
+      commit 532146c39046a29c0e685f7b223fbfa49452d2cf
+      Author: Daishi Kaszer <daishi.kaszer@yahoo.fr>
+      Date:   Tue Nov 24 11:54:03 2015 +0100
+
+          Premier commit
+      ```
+
+    ### documentation
+
+    [Git - Documentation](http://www.git-scm.com/doc)
+    [Learn Version Control with Git for Free](http://www.git-tower.com/learn/)
+    [GitHub Guides](https://guides.github.com/)
+    [Code School - Try Git](https://try.github.io/levels/1/challenges/1)
+

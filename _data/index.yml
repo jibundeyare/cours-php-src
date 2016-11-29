@@ -32,6 +32,7 @@ content: |
 
     - [se documenter](documentation.html)
     - [virtualbox + vagrant + cnam box](virtualbox.html)
+    - [git + github / bitbucket / gitlab](git.html)
     - [la suite apache mysql php (amp)](amp.html)
     - [php en ligne de commande](cli.html)
     - [composer : un gestionnaire de paquets php](composer.html)
