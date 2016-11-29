@@ -12,7 +12,7 @@ content: |
 
     #### les fonctions de transtypage
 
-    - `boolval()`
+    - `boolval()` _(à partir de PHP 5.5.0 seulement)_
     - `floatval()`
     - `intval()`
     - `number_format()`
