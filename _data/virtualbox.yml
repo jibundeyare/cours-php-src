@@ -40,6 +40,7 @@ content: |
        home/
        L www/
          L cnam.dev/
+           L apache2/
            L bin/
            L data/
            L logs/
@@ -73,10 +74,10 @@ content: |
     8. seulement si vous utilisez la cnam-box 32 bit, ouvrez le fichier `Vagrant` avec votre éditeur de code, enlevez la dièse `#` de l& ligne 13 et ajoutez une dièse `#` devant la ligne 14
     9. tapez les commandes suivantes :
 
-        ```bash
-        vagrant up
-        vagrant ssh
-        ```
+       ```bash
+       vagrant up
+       vagrant ssh
+       ```
     10. si vous obtenez le résultat suivant, c'est que la vm et la connexion ssh fonctionnent :
 
         ```
@@ -102,6 +103,50 @@ content: |
         exit
         vagrant halt
         ```
+
+    ### remplacer une vm cnam-box par une version plus récente
+
+    1. copiez la nouvelle version de la vm dans le dossier du projet cnam, au même niveau que le fichier `Vagrantfile`
+    2. ouvrir un terminal / une ligne de commande
+    3. rendez-vous dans la racine du dossier du projet :
+
+       ```bash
+       cd
+       cd www
+       cd cnam.dev
+       ```
+    4. détruisez l'instance actuelle de la vm :
+
+       ```bash
+       vagrant destroy
+       ```
+    5. supprimez l'ancienne vm cnam box
+       - si vous utilisez la cnam-box 32 bit, tapez la commande suivante :
+
+         ```bash
+         vagrant box remove cnam-box-32
+         ```
+       - si vous utilisez la cnam-box 64 bit, tapez la commande suivante :
+
+         ```bash
+         vagrant box remove cnam-box-64
+         ```
+    6. importez la nouvelle vm cnam box
+       - si vous utilisez la cnam-box 32 bit, tapez la commande suivante :
+
+         ```bash
+         vagrant box add cnam-box-32 cnam-box-32-x.x.x.box
+         ```
+       - si vous utilisez la cnam-box 64 bit, tapez la commande suivante :
+
+         ```bash
+         vagrant box add cnam-box-64 cnam-box-64-x.x.x.box
+         ```
+    7. reconstruisez une nouvelle instance de la vm :
+
+       ```bash
+       vagrant up
+       ```
 
     ### les erreurs
 
