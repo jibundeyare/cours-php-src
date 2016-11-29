@@ -39,6 +39,7 @@ content: |
     - [php en ligne de commande](cli.html)
     - [composer : un gestionnaire de paquets php](composer.html)
     - [wordpress](wordpress.html)
+    - [phpdoc](phpdoc.html)
 
     - [l'éditeur de code](editeur.html)
     - [quelques outils du développeur](outils.html)
