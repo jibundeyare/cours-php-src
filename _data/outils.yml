@@ -17,28 +17,6 @@ content: |
 
     [Meld](http://meldmerge.org/)
 
-    ### Git : un gestionnaire de versions
-
-    [Git](http://www.git-scm.com/)
-
-    __Max OS X__
-
-    Télécharger depuis [Git - Downloading Package](http://www.git-scm.com/download/mac)
-
-    __Windows__
-
-    Télécharger depuis [Git - Downloading Package](http://www.git-scm.com/download/win)
-
-    __Linux__
-
-    Voir [Git](http://www.git-scm.com/download/linux)
-
-    Avec Debian/Ubuntu
-
-    ```bash
-    apt-get install git
-    ```
-
     ### Homebrew : un gestionnaire de paquets pour mac os x
 
     [Homebrew — The missing package manager for OS X](http://brew.sh/)
