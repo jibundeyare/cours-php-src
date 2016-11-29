@@ -32,6 +32,7 @@ content: |
 
     - [se documenter](documentation.html)
     - [virtualbox + vagrant + cnam box](virtualbox.html)
+    - [nom de domaines locaux](domaines.html)
     - [git + github / bitbucket / gitlab](git.html)
     - la configuration du`virtualhost` (_en cours de rédaction_)
     - [la suite apache mysql php (amp)](amp.html)

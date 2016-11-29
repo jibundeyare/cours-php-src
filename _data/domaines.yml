@@ -1,0 +1,53 @@
+content: |
+    ## nom de domaines locaux (le fichier `hosts`)
+
+    Pour utiliser des nom de domaines locaux personnalisés, nous allons modifier le fichier `hosts`.
+
+    ### windows
+
+    __Attention : vous devez ouvir votre éditeur de code en tant qu'administrateur pour pouvoir faire les modifications nécessaires.__
+
+      Si vous ne savez pas comment ouvrir votre éditeur de code en tant qu'administrateur, il y a ce tutoriel (en anglais) [Run a Command as Administrator from the Windows Run Box (Any Version)](http://www.howtogeek.com/howto/windows-vista/run-a-command-as-administrator-from-the-windows-vista-run-box/) ou cette question / réponse (en anglais aussi) [Run as administrator from command line on Windows 8 - Super User](http://superuser.com/questions/553441/run-as-administrator-from-command-line-on-windows-8).
+
+    En tant qu'administrateur, ouvrez avec votre éditeur de code favori le fichier qui se trouve à cet emplacement :
+
+    ```bash
+    %SystemRoot%\System32\drivers\etc\hosts
+    ```
+
+    La pluart du temps, votre `%SystemRoot%` est `C:`, ce qui donne ceci :
+
+    ```bash
+    C:\Windows\System32\drivers\etc\hosts
+    ```
+
+    Ajoutez-y la ligne suivante à la fin du fichier :
+
+    ```bash
+    192.168.33.10 cnam.dev
+    ```
+
+    ### mac os x + linux
+
+    __Attention : vous devez ouvir votre éditeur de code en tant qu'administrateur pour pouvoir faire les modifications nécessaires.__
+
+    Le plus simple est d'utiliser `nano` en ligne de commande :
+
+    ```bash
+    sudo nano /etc/hosts
+    ```
+
+    Avec `nano`, vos devez utiliser la combinaison de touches `CTRL O` pour enregistrer et pour sortir `CTRL X`.
+
+    En tant qu'administrateur, ouvrez avec votre éditeur de code favori le fichier qui se trouve à cet emplacement :
+
+    ```bash
+    /etc/hosts
+    ```
+
+    Ajoutez-y la ligne suivante à la fin du fichier :
+
+    ```bash
+    192.168.33.10 cnam.dev
+    ```
+
