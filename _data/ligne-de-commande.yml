@@ -3,17 +3,17 @@ content: |
 
     ### comment ouvrir la ligne de commande
 
-    #### avec Mac OS X
-
-    Voir ce tuto :
-
-    [Lancer le Terminal](http://www.tal.univ-paris3.fr/plurital/travaux-2008-2009/L7T04-2008-2009/laviedesbouchonssurleweb/TerminalMac.html)
-
     #### avec Windows
 
     Voir ce tuto :
 
     [Comment ouvrir l'Invite de commande sur Windows ? - Lecoindunet.com](http://www.lecoindunet.com/comment-ouvrir-l-invite-de-commande-sur-windows-320)
+
+    #### avec Mac OS X
+
+    Voir ce tuto :
+
+    [Lancer le Terminal](http://www.tal.univ-paris3.fr/plurital/travaux-2008-2009/L7T04-2008-2009/laviedesbouchonssurleweb/TerminalMac.html)
 
     #### avec Linux
 
@@ -25,22 +25,30 @@ content: |
 
     ### lister les fichiers d'un répertoire
 
-    #### avec Max OS X
-
-    ```bash
-    ls
-    ```
-
     #### avec Windows
 
     ```bash
     dir
     ```
 
-    #### avec Linux
+    #### avec Max OS X et Linux
 
     ```bash
     ls
+    ```
+
+    ### aller dans le répertoire `home`
+
+    #### avec Windows
+
+    ```bash
+    cd /D %HOMEPATH%
+    ```
+
+    #### avec Mac OS X et Linux
+
+    ```bash
+    cd ~
     ```
 
     ### accéder à un sous-répertoire
@@ -55,87 +63,23 @@ content: |
     cd ..
     ```
 
-    ###  se rendre dans le dossier où se trouvent les fichiers de code php
+    ###  se rendre dans le dossier du projet web `cnam.dev`
 
-    Admettons que le dossier `NFA017` se trouve sur votre desktop.
-
-    #### avec Mac OS X
-
-    ```bash
-    cd ~
-    cd Desktop
-    cd NFA017
-    cd cours
-    cd code
-    ```
+    Admettons que le dossier projet se nomme `www`.
 
     #### avec Windows
 
     ```bash
     cd /D %HOMEPATH%
-    cd Desktop
-    cd NFA017
-    cd cours
-    cd code
+    cd www
+    cd cnam.dev
     ```
 
-    __Attention__ : selon la langue du système, le dossier `Desktop` peut s'appeler `Bureau`.
-
-    #### avec Linux
+    #### avec Mac OS X et Linux
 
     ```bash
     cd ~
-    cd Desktop
-    cd NFA017
-    cd cours
-    cd code
-    ```
-
-    ###  se rendre dans le dossier où se trouvent les fichiers d'exercices php
-
-    Admettons que le dossier `NFA017` se trouve sur votre desktop.
-
-    #### avec Mac OS X
-
-    ```bash
-    cd ~
-    cd Desktop
-    cd NFA017
-    cd cours
-    cd exos
-    ```
-
-    __Attention__ : selon la langue du système, le dossier `Desktop` peut s'appeler `Bureau`.
-
-    #### avec Windows
-
-    ```bash
-    cd /D %HOMEPATH%
-    cd Desktop
-    cd NFA017
-    cd cours
-    cd exos
-    ```
-
-    #### avec Linux
-
-    ```bash
-    cd ~
-    cd Desktop
-    cd NFA017
-    cd cours
-    cd exos
-    ```
-
-    ### passer du dossier de code au dossier d'exos
-
-    ```bash
-    cd ../exos
-    ```
-
-    ### passer du dossier d'exos au dossier de code
-
-    ```bash
-    cd ../code
+    cd www
+    cd cnam.dev
     ```
 
