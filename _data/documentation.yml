@@ -17,6 +17,16 @@ content: |
 
     - [PHP-FIG — PHP Framework Interop Group](http://www.php-fig.org/)
 
+    ### les frameworks
+
+    - [Silex](http://silex.sensiolabs.org/documentation)
+    - [Symfony](http://symfony.com/doc/current/index.html)
+
+    ### les paquets (composants, librairies)
+
+    - [Database Abstraction Layer — Doctrine Project](http://www.doctrine-project.org/projects/dbal.html)
+    - [Validation (The Symfony Book)](http://symfony.com/doc/current/book/validation.html)
+
     ### se former
 
     - [PHP - Codecademy](http://www.codecademy.com/fr/tracks/php)
@@ -33,7 +43,7 @@ content: |
     - [TechM6Web](http://tech.m6web.fr/)
     - [JoliCode - Réalisation de projets Web et mobiles de qualité](http://jolicode.com/blog/)
     - [SitePoint PHP – Learn PHP, MySQL, SOAP & more](http://www.sitepoint.com/php/)
-    - [Dev Metal | A PHP & Frontend Blog](http://www.dev-metal.com/)
+    - [Dev Metal \| A PHP & Frontend Blog](http://www.dev-metal.com/)
 
     ### trouver des projets php
 
