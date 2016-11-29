@@ -1,3 +1,22 @@
+// $font-family-sans-serif: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+$font-family-sans-serif: sans-serif, "Helvetica Neue", Helvetica, Roboto, Arial;
+
+body {
+	font-family: $font-family-sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: $font-family-sans-serif;
+}
+
+p {
+	margin-top: 1.25rem;
+}
+
+blockquote {
+    padding: 0px 0px 0px 1.1875rem;
+}
+
 figure > pre {
 	border: none;
 	margin-bottom: 1rem;
@@ -15,6 +34,7 @@ pre {
 	background-color: #f8f8f8;
 	border: 1px solid #dfdfdf;
 	border-radius: 5px;
+	margin-bottom: 1.5rem;
 	padding: 0.125rem 0.3125rem 0.0625rem;
 
 	code {
@@ -31,6 +51,11 @@ pre {
 			color: #999999;
 		}
 	}
+}
+
+td.gutter pre,
+td.code pre {
+	margin-bottom: 0px;
 }
 
 .gutter {
