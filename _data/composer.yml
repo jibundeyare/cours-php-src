@@ -3,23 +3,77 @@ content: |
 
     ### à quoi ça sert ?
 
-    - gérer les dépendances à votre place
+    - gérer l'autoloading (plus besoin de multiplier les `include()`, un seul `require_once()` suffit)
+    - gérer les dépendances et les problèmes des versions des dépendances à votre place
 
-    exemple :
+    La gestion des dépendances peut vite devenir complexe.
+    À titre d'exemple, voici la liste des dépendances des frameworks Symfony et Silex :
 
-    - [Silex/composer.json at master · silexphp/Silex](https://github.com/silexphp/Silex/blob/master/composer.json)
-
-    - gérer l'autoloading
+    [symfony/composer.json at master · symfony/symfony](https://github.com/symfony/symfony/blob/master/composer.json)
+    [Silex/composer.json at master · silexphp/Silex](https://github.com/silexphp/Silex/blob/master/composer.json)
 
     ### où le trouver ?
 
     [getcomposer.org](https://getcomposer.org/)
 
-    ### utilisation de composer
+    ### recherche d'un paquet
 
     ```bash
-    composer.phar init
-    composer.phar search yaml
-    composer.phar require symfony/yaml
+    php composer.phar search validator
+    php composer.phar show symfony/validator
+    ```
+
+    ### installation d'un paquet (d'une version supérieure ou égale à 2.8 mais inférieure à 3.0 et excluant la version de dev symfony/validator:2.8.x-dev)
+
+    ```bash
+    php composer.phar require symfony/validator:~2.8
+    php composer.phar install
+    ```
+
+    ### installation de plusieurs paquets
+
+    ```bash
+    php composer.phar require doctrine/dbal:~2.2
+    php composer.phar require symfony/validator:~2.8
+    php composer.phar install
+    ```
+
+    ### mise à jour d'un seul paquet
+
+    ```bash
+    php composer.phar require symfony/validator:~2.8
+    php composer.phar update symfony/validator
+    ```
+
+    ### mise à jour de plusieurs paquets
+
+    ```bash
+    php composer.phar require doctrine/dbal:~2.2
+    php composer.phar require symfony/validator:~2.8
+    php composer.phar update doctrine/dbal symfony/validator
+    ```
+
+    ### mise à jour de tous les paquets
+
+    __Attention : cette commande met à jour tous les paquets de la section `require` du fichier `composer.json` et pas seulement ceux dont on vient de changer la version.__
+
+    ```bash
+    php composer.phar require doctrine/dbal:~2.2
+    php composer.phar require symfony/validator:~2.8
+    php composer.phar update
+    ```
+
+    ### mise à jour de composer lui-même
+
+    Si vous voyez le message d'avertissement suivant quand vous utilisez composer, vous pouvez mettre composer à jour :
+
+    ```
+    Warning: This development build of composer is over 60 days old. It is recommended to update it by running "./composer.phar self-update" to get the latest version.
+    ```
+
+    Pour mettre à jour composer :
+
+    ```bash
+    php composer self-update
     ```
 
