@@ -1,4 +1,4 @@
-destination: ../cours
+destination: ../NFA017
 
 exclude: [
     .git,
