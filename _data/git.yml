@@ -63,7 +63,7 @@ content: |
       git devrait afficher :
 
       ```bash
-      Dépôt Git vide initialisé dans /home/daishi/www/cnam.dev/www/.git/
+      Dépôt Git vide initialisé dans /home/foo/www/cnam.dev/www/.git/
       ```
 
     ### enregistrer un commit
@@ -121,7 +121,7 @@ content: |
 
       ```bash
       commit 532146c39046a29c0e685f7b223fbfa49452d2cf
-      Author: Daishi Kaszer <daishi.kaszer@yahoo.fr>
+      Author: Foo Bar <foo.bar@example.com>
       Date:   Tue Nov 24 11:54:03 2015 +0100
 
           Premier commit

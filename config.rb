@@ -4,7 +4,7 @@ add_import_path "sass/vendor"
 
 # Set this to the root of your project when deployed:
 http_path = ""
-project_path = "/home/daishi/cnam/NFA017/cours-src"
+project_path = "/home/daishi/cours/NFA017-src"
 css_dir = "css"
 sass_dir = "sass"
 images_dir = "img"
